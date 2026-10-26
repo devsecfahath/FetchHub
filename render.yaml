@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: telegram-media-downloader
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: RATE_LIMIT_PER_MINUTE
+        value: "5"
+      - key: AUTO_DELETE_HOURS
+        value: "24"
+      - key: CLEANUP_INTERVAL_MINUTES
+        value: "15"

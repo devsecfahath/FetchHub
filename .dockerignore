@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+bot.db
+downloads/
+.git
+.gitignore
+.agents
+.gemini
